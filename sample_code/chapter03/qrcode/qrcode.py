@@ -17,7 +17,7 @@ qrDecoder = cv2.QRCodeDetector()
 data, bbox, rect_img = qrDecoder.detectAndDecode(gray)
 
 if len(data) > 0:
-	# 検出結果表示
+    # 検出結果表示
     display(img, bbox)
 
     # デコード結果表示
